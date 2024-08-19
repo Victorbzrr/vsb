@@ -1,0 +1,108 @@
+:root {
+    --main-color: #e9a209;
+    --text-color: #000000;
+    --bg-color-01: #fff9ea;
+    --bg-color-02: #ffffff;
+
+    /* Extra */
+    --color-01: #999999;
+    --color-02: #009539;
+    --color-03: #7950f2;
+    --color-04: #c00000;
+    --color-05: #232323;
+}
+
+span {
+    color: var(--main-color);
+}
+
+section {
+    padding: 28px 6%;
+}
+
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+}
+
+#cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10%;
+}
+
+#cta h1 {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 3rem;
+    color: #1d1d1d;
+}
+
+#cta h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#cta .description {
+    font-size: 1.1rem;
+}
+
+#banner img {
+    border-right: solid 0.6rem;
+    border-bottom: solid 0.6rem;
+    border-image: linear-gradient(135deg, transparent 50%, var(--main-color)) 1;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 970px) {
+    #home {
+        flex-direction: column;
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img {
+        width: 90%;
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Remove o espaço extra abaixo da imagem */
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        order: 2;
+        margin-top: 5px;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        order: 1;
+    }
+}
+
+    
